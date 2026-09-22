@@ -12,6 +12,7 @@
   />
 
   <style>
+    @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
     * {
       margin: 0;
       padding: 0;
@@ -195,10 +196,10 @@
     }
 
     .hero h1 {
-      font-family: "Trebuchet MS", sans-serif;
+      font-family: "Berkshire Swash", cursive;
       font-size: clamp(54px, 8vw, 105px);
-      line-height: 0.88;
-      letter-spacing: -6px;
+      line-height: 0.95;
+      letter-spacing: 0;
       margin-bottom: 25px;
       overflow-wrap: anywhere;
     }
@@ -261,65 +262,15 @@
       right: -20px;
       width: 116px;
       height: 116px;
-      border-radius: 50%;
-      background: #087f3f;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
       z-index: 5;
       transform: rotate(7deg);
-      box-shadow:
-        0 14px 28px rgba(0, 0, 0, 0.18),
-        0 4px 10px rgba(0, 0, 0, 0.08);
     }
 
-    .halal-badge::before {
-      content: "";
-      position: absolute;
-      inset: 7px;
-      border: 2px solid rgba(255, 255, 255, 0.95);
-      border-radius: 50%;
-    }
-
-    .halal-badge::after {
-      content: "";
-      position: absolute;
-      inset: 13px;
-      border: 1px solid rgba(255, 255, 255, 0.65);
-      border-radius: 50%;
-    }
-
-    .halal-inner {
-      position: relative;
-      z-index: 2;
-      width: 88px;
-      height: 88px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      line-height: 1;
-      transform: rotate(-7deg);
-    }
-
-    .halal-symbol {
-      font-family: "Times New Roman", serif;
-      font-size: 36px;
-      font-weight: 700;
-      line-height: 1;
-      margin-bottom: 8px;
-      direction: rtl;
-      white-space: nowrap;
-    }
-
-    .halal-main {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 13px;
-      font-weight: 900;
-      letter-spacing: 2px;
-      line-height: 1;
+    .halal-badge img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
     }
 
     /* =========================
@@ -458,7 +409,7 @@
 
     .products-grid {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 25px;
     }
 
@@ -1079,28 +1030,9 @@
         right: -12px;
       }
 
-      .halal-badge::before {
-        inset: 6px;
-      }
 
-      .halal-badge::after {
-        inset: 12px;
-      }
 
-      .halal-inner {
-        width: 76px;
-        height: 76px;
-      }
 
-      .halal-symbol {
-        font-size: 30px;
-        margin-bottom: 7px;
-      }
-
-      .halal-main {
-        font-size: 11px;
-        letter-spacing: 1.5px;
-      }
 
       .contact-links {
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1150,7 +1082,7 @@
 
       .hero h1 {
         font-size: clamp(48px, 17vw, 68px);
-        letter-spacing: -4px;
+        letter-spacing: 0;
       }
 
       .hero-subtitle {
@@ -1197,28 +1129,9 @@
         right: -8px;
       }
 
-      .halal-badge::before {
-        inset: 5px;
-      }
 
-      .halal-badge::after {
-        inset: 10px;
-      }
 
-      .halal-inner {
-        width: 64px;
-        height: 64px;
-      }
 
-      .halal-symbol {
-        font-size: 24px;
-        margin-bottom: 5px;
-      }
-
-      .halal-main {
-        font-size: 8px;
-        letter-spacing: 1px;
-      }
 
       .section-heading h2 {
         font-size: clamp(34px, 11vw, 48px);
@@ -1369,19 +1282,8 @@
         right: -6px;
       }
 
-      .halal-inner {
-        width: 58px;
-        height: 58px;
-      }
 
-      .halal-symbol {
-        font-size: 21px;
-      }
 
-      .halal-main {
-        font-size: 7px;
-        letter-spacing: 0.7px;
-      }
 
       .product-detail {
         flex-direction: column;
@@ -1480,10 +1382,7 @@
           </div>
 
           <div class="halal-badge">
-            <div class="halal-inner">
-              <div class="halal-symbol">حلال</div>
-              <div class="halal-main">HALAL</div>
-            </div>
+            <img src="assets/halal.jpg" alt="Halal" />
           </div>
 
         </div>
@@ -1646,7 +1545,7 @@
 
               <div class="product-detail">
                 <span style="display:none">Komposisi</span>
-                <span style="width:100%; text-align:center;">Olahan ikan tongkol pilihan yang dimasak dengan bumbu rendang khas Indonesia, kaya rempah dan bercita rasa lezat.</span>
+                <span style="width:100%; text-align:center;">Ikan tongkol yang dimasak dengan bumbu rendang khas Indonesia.</span>
               </div>
 
               <div class="product-detail">
@@ -1687,7 +1586,7 @@
 
               <div class="product-detail">
                 <span style="display:none">Komposisi</span>
-                <span style="width:100%; text-align:center;">Daging sapi pilihan yang dimasak dengan bumbu rendang tradisional, menghasilkan cita rasa kaya dan tekstur yang empuk.</span>
+                <span style="width:100%; text-align:center;">Daging sapi empuk dengan bumbu rendang yang kaya rempah.</span>
               </div>
 
               <div class="product-detail">
@@ -1728,7 +1627,7 @@
 
               <div class="product-detail">
                 <span style="display:none">Komposisi</span>
-                <span style="width:100%; text-align:center;">Basreng dengan cita rasa khas daun jeruk yang harum, gurih, dan nikmat di setiap gigitan.</span>
+                <span style="width:100%; text-align:center;">Dendeng sapi dengan cita rasa gurih dan renyah.</span>
               </div>
 
               <div class="product-detail">
@@ -1769,7 +1668,7 @@
 
               <div class="product-detail">
                 <span style="display:none">Komposisi</span>
-                <span style="width:100%; text-align:center;">Dendeng sapi khas Indonesia dengan perpaduan bumbu autentik yang gurih dan pedas.</span>
+                <span style="width:100%; text-align:center;">Dendeng sapi dengan bumbu khas yang gurih dan pedas.</span>
               </div>
 
               <div class="product-detail">
@@ -1810,12 +1709,12 @@
 
               <div class="product-detail">
                 <span style="display:none">Komposisi</span>
-                <span style="width:100%; text-align:center;">Teri nasi renyah dengan cita rasa gurih, cocok sebagai camilan maupun pelengkap hidangan</span>
+                <span style="width:100%; text-align:center;">Teri nasi renyah dengan cita rasa gurih.</span>
               </div>
 
               <div class="product-detail">
                 <span>Berat Bersih</span>
-                <span>180 gram</span>
+                <span>120 gram</span>
               </div>
 
               <div class="product-detail">
@@ -1825,7 +1724,7 @@
 
               <div class="product-detail">
                 <span>Harga</span>
-                <span>Rp 70.000</span>
+                <span>Rp 60.000</span>
               </div>
 
             </div>
@@ -1851,7 +1750,7 @@
 
               <div class="product-detail">
                 <span style="display:none">Komposisi</span>
-                <span style="width:100%; text-align:center;">Perpaduan teri renyah dan kacang pilihan dengan bumbu balado khas Indonesia yang gurih dan pedas.</span>
+                <span style="width:100%; text-align:center;">Perpaduan teri renyah dan kacang dengan bumbu balado.</span>
               </div>
 
               <div class="product-detail">
@@ -1862,6 +1761,88 @@
               <div class="product-detail">
                 <span>Varian</span>
                 <span>Teri Kacang Balado</span>
+              </div>
+
+              <div class="product-detail">
+                <span>Harga</span>
+                <span>Rp 60.000</span>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="product-card">
+
+            <div class="product-image">
+
+              <img
+                src="assets/produk7.png"
+                alt="Sarden Homemade"
+              />
+
+            </div>
+
+            <div class="product-content">
+
+              <h3>
+                Sarden Homemade</h3>
+
+              <div class="product-detail">
+                <span style="display:none">Komposisi</span>
+                <span style="width:100%; text-align:center;">Ikan sarden homemade yang praktis untuk dinikmati sebagai lauk.</span>
+              </div>
+
+              <div class="product-detail">
+                <span>Berat Bersih</span>
+                <span>250 gram</span>
+              </div>
+
+              <div class="product-detail">
+                <span>Varian</span>
+                <span>Ikan Sarden</span>
+              </div>
+
+              <div class="product-detail">
+                <span>Harga</span>
+                <span>Rp 60.000</span>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="product-card">
+
+            <div class="product-image">
+
+              <img
+                src="assets/produk8.png"
+                alt="Sambalado"
+              />
+
+            </div>
+
+            <div class="product-content">
+
+              <h3>
+                Sambalado</h3>
+
+              <div class="product-detail">
+                <span style="display:none">Komposisi</span>
+                <span style="width:100%; text-align:center;">Sambalado dengan cita rasa pedas dan gurih sebagai pelengkap hidangan.</span>
+              </div>
+
+              <div class="product-detail">
+                <span>Berat Bersih</span>
+                <span>250 gram</span>
+              </div>
+
+              <div class="product-detail">
+                <span>Varian</span>
+                <span>Sambalado</span>
               </div>
 
               <div class="product-detail">
